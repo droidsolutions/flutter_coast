@@ -58,7 +58,7 @@ class Coast extends StatefulWidget {
 }
 
 class CoastController {
-  CoastController({int initialPage = 0}) : _pageController = PageController(initialPage: initialPage);
+  CoastController({int initialPage = 0, double viewportFraction = 1.0}) : _pageController = PageController(initialPage: initialPage, viewportFraction: viewportFraction);
 
   final PageController _pageController;
 
